@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "146018790284",
+    "firebase_url": "https://easynote-ce6fc-default-rtdb.firebaseio.com",
+    "project_id": "easynote-ce6fc",
+    "storage_bucket": "easynote-ce6fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146018790284:android:5a8dd30b6f8a68615b84a9",
+        "android_client_info": {
+          "package_name": "com.example.uruk_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfSpWA-MD480HmMv3_4g2aogXK7I0Vq5Q"
+        },
+        {
+          "current_key": "AIzaSyBUQfGyJaOHyt7TCT9rTW0HoT1-Z4Wo3as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146018790284:android:b8e92613a63ce39c5b84a9",
+        "android_client_info": {
+          "package_name": "com.lads.note_application.pk.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146018790284-gp6ck6rom6obr30hbfpt8jhrcu5qissn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lads.note_application.pk.org",
+            "certificate_hash": "cdd209b2e980b0ac0ca8675965444311044664ce"
+          }
+        },
+        {
+          "client_id": "146018790284-tac0017ta2a62ms1tdv3m8459tncb3u1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lads.note_application.pk.org",
+            "certificate_hash": "63305edf7b8cca4de9b7314bd923ab3c9fffcb0b"
+          }
+        },
+        {
+          "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfSpWA-MD480HmMv3_4g2aogXK7I0Vq5Q"
+        },
+        {
+          "current_key": "AIzaSyBUQfGyJaOHyt7TCT9rTW0HoT1-Z4Wo3as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146018790284:android:0fbb95cbf6adbe865b84a9",
+        "android_client_info": {
+          "package_name": "com.timelessfusionapps.smart_talk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146018790284-c4nrv7tgm34nnhl6ncshg7li7rltn69h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timelessfusionapps.smart_talk",
+            "certificate_hash": "7bdbb24c00f0d001b40b94b1ade33dad6c55933c"
+          }
+        },
+        {
+          "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfSpWA-MD480HmMv3_4g2aogXK7I0Vq5Q"
+        },
+        {
+          "current_key": "AIzaSyBUQfGyJaOHyt7TCT9rTW0HoT1-Z4Wo3as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146018790284-b1a9i9ig87dljhk6leei97716jq81qas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
