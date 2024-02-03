@@ -7,12 +7,21 @@ class TodoEntity {
 
   factory TodoEntity.fromJson(Map<String, dynamic> json) {
     return TodoEntity(
-      id: json['id'] as int,
-      isCompleted: json['title'],
-      title: json['isCompleted'],
+      id: json['id'],
+      title: json['title'],
+      isCompleted: json['isCompleted'],
     );
   }
-  final int id;
+
+  TodoEntity copyWith({required String id}) {
+    return TodoEntity(
+      id: id,
+      title: title,
+      isCompleted: isCompleted,
+    );
+  }
+
+  final String id;
   final String title;
   final bool isCompleted;
 }

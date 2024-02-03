@@ -43,7 +43,7 @@ dependencies:
   http: ^1.1.2
   flutter_riverpod: ^2.4.9
   firebase_core: ^2.25.3
-
+  fluttertoast: ^8.2.4
 
 dev_dependencies:
   flutter_test:

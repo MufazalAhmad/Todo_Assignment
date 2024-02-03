@@ -9,23 +9,26 @@ import 'package:todo_assignment/infrastructure/usecase_output.dart';
 class GetTodosUsecaseInput extends Input {}
 
 class GetTodosUsecaseOutput extends Output {
-  final List<TodoModel> _todos;
-  GetTodosUsecaseOutput({required List<TodoEntity> todos})
-      : _todos = todos.map((e) => TodoModel.formEntity(e)).toList();
+  final Stream<List<TodoModel>> _todos;
 
-  List<TodoModel> get todos => _todos;
+  GetTodosUsecaseOutput({required Stream<List<TodoEntity>> todos})
+      : _todos = todos.map((List<TodoEntity> entities) {
+          return entities
+              .map((entity) => TodoModel.formEntity(entity))
+              .toList();
+        });
+
+  Stream<List<TodoModel>> get todos => _todos;
 }
 
 @lazySingleton
-class GetTodosUsecase
-    extends Usecase<GetTodosUsecaseOutput, GetTodosUsecaseInput> {
+class GetTodosUsecase {
   final TodoRepository _todoRepository;
 
   GetTodosUsecase({required TodoRepository todoRepository})
       : _todoRepository = todoRepository;
 
-  @override
-  Future<GetTodosUsecaseOutput> call(GetTodosUsecaseInput input) {
+  GetTodosUsecaseOutput call(GetTodosUsecaseInput input) {
     return _todoRepository.getTodos(input);
   }
 }

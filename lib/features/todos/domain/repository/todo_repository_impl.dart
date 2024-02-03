@@ -2,6 +2,7 @@ import 'package:injectable/injectable.dart';
 import 'package:todo_assignment/features/todos/datasource/firebase/firebase_datasource.dart';
 import 'package:todo_assignment/features/todos/domain/repository/todo_repository.dart';
 import 'package:todo_assignment/features/todos/domain/usecase/add_todo_usecase.dart';
+import 'package:todo_assignment/features/todos/domain/usecase/delete_todo_usecase.dart';
 import 'package:todo_assignment/features/todos/domain/usecase/get_todos_usecase.dart';
 import 'package:todo_assignment/features/todos/domain/usecase/update_todo_usecase.dart';
 import 'package:todo_assignment/infrastructure/usecase_input.dart';
@@ -18,12 +19,17 @@ class TodoRepositoryImpl extends TodoRepository {
   }
 
   @override
-  Future<GetTodosUsecaseOutput> getTodos(GetTodosUsecaseInput input) {
+  GetTodosUsecaseOutput getTodos(GetTodosUsecaseInput input) {
     return firebaseDataSource.getTodos(input);
   }
 
   @override
   Future<UpdateTodoUsecaseOutput> updateTodo(UpdateTodoUsecaseInput input) {
     return firebaseDataSource.updateTodo(input);
+  }
+
+  @override
+  Future<DeleteTodoUsecaseOutput> deleteTodo(DeleteTodoUsecaseInput input) {
+    return firebaseDataSource.deleteTodo(input);
   }
 }

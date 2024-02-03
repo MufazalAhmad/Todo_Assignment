@@ -6,5 +6,5 @@ import 'package:todo_assignment/utils/di/di.dart';
 final updateTodoProvider =
     FutureProvider.autoDispose.family<void, TodoModel>((ref, model) async {
   final addTodoUsecase = sl<AddTodoUsecase>();
-  await addTodoUsecase(AddTodoUsecaseInput(todo: model));
+//  await addTodoUsecase(AddTodoUsecaseInput(todo: model));
 });

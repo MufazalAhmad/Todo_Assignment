@@ -5,23 +5,23 @@ import 'package:todo_assignment/infrastructure/usecase.dart';
 import 'package:todo_assignment/infrastructure/usecase_input.dart';
 import 'package:todo_assignment/infrastructure/usecase_output.dart';
 
-class AddTodoUsecaseInput extends Input {
-  final String taskTitle;
-  AddTodoUsecaseInput({required this.taskTitle});
+class DeleteTodoUsecaseInput extends Input {
+  final String id;
+  DeleteTodoUsecaseInput({required this.id});
 }
 
-class AddTodoUsecaseOutput extends Output {}
+class DeleteTodoUsecaseOutput extends Output {}
 
 @lazySingleton
-class AddTodoUsecase
-    extends Usecase<AddTodoUsecaseOutput, AddTodoUsecaseInput> {
+class DeleteTodoUsecase
+    extends Usecase<DeleteTodoUsecaseOutput, DeleteTodoUsecaseInput> {
   final TodoRepository _todoRepository;
 
-  AddTodoUsecase({required TodoRepository todoRepository})
+  DeleteTodoUsecase({required TodoRepository todoRepository})
       : _todoRepository = todoRepository;
 
   @override
-  Future<AddTodoUsecaseOutput> call(input) {
-    return _todoRepository.addTodo(input);
+  Future<DeleteTodoUsecaseOutput> call(input) {
+    return _todoRepository.deleteTodo(input);
   }
 }

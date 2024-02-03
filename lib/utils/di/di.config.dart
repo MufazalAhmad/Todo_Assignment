@@ -19,7 +19,8 @@ import '../../features/todos/domain/repository/todo_repository.dart' as _i5;
 import '../../features/todos/domain/repository/todo_repository_impl.dart'
     as _i6;
 import '../../features/todos/domain/usecase/add_todo_usecase.dart' as _i8;
-import '../../features/todos/domain/usecase/get_todos_usecase.dart' as _i9;
+import '../../features/todos/domain/usecase/delete_todo_usecase.dart' as _i9;
+import '../../features/todos/domain/usecase/get_todos_usecase.dart' as _i10;
 import '../../features/todos/domain/usecase/update_todo_usecase.dart' as _i7;
 
 extension GetItInjectableX on _i1.GetIt {
@@ -40,8 +41,10 @@ extension GetItInjectableX on _i1.GetIt {
         () => _i7.UpdateTodoUsecase(todoRepository: gh<_i5.TodoRepository>()));
     gh.lazySingleton<_i8.AddTodoUsecase>(
         () => _i8.AddTodoUsecase(todoRepository: gh<_i5.TodoRepository>()));
-    gh.lazySingleton<_i9.GetTodosUsecase>(
-        () => _i9.GetTodosUsecase(todoRepository: gh<_i5.TodoRepository>()));
+    gh.lazySingleton<_i9.DeleteTodoUsecase>(
+        () => _i9.DeleteTodoUsecase(todoRepository: gh<_i5.TodoRepository>()));
+    gh.lazySingleton<_i10.GetTodosUsecase>(
+        () => _i10.GetTodosUsecase(todoRepository: gh<_i5.TodoRepository>()));
     return this;
   }
 }

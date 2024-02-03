@@ -1,7 +1,7 @@
 import 'package:todo_assignment/features/todos/datasource/entities/todo_entity.dart';
 
 class TodoModel {
-  final int id;
+  final String id;
   final String title;
   final bool isCompleted;
 
